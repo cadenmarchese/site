@@ -9,3 +9,4 @@ Work in progress.
 [X] Move from CSS on every page to a stylesheet
 [ ] Wrap in a Go framework
 [ ] Shop for a different font
+[ ] Add nuancer track(s) to other work
