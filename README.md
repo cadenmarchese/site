@@ -10,3 +10,4 @@ Work in progress.
 [ ] Wrap in a Go framework
 [ ] Shop for a different font
 [ ] Add nuancer track(s) to other work
+[ ] Re-pick featured tracks in bandcamp
