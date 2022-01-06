@@ -1,12 +1,5 @@
 ## Site
 
-Site is a personal static HTML site, comprised of mostly Bandcamp embeds. Work in progress.
+Site is a personal static HTML site, comprised of mostly Bandcamp embeds (music projects).
 
-## To Do
-
-[X] Move from CSS on every page to a stylesheet
-[ ] Wrap in a Go framework (or other framework)
-[X] Shop for a different font
-[ ] Add nuancer track(s) to other work
-[ ] Re-pick featured tracks in bandcamp
-[ ] Learn JavaScript
+Site is exposed at `https://cadenmarchese.github.io`.
