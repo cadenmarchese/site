@@ -1,64 +1,71 @@
 h1 {text-align: center;
-    font-family: 'Open Sans Condensed', sans-serif;
-    letter-spacing: 6px;
+    font-family: 'Source Code Pro';
+    letter-spacing: 0.08em;
     color: #000;
-    font-size: 2.5em;
+    font-size: 2.7em;
     font-weight: normal;
 }
 
 h2 {text-align: center;
-    font-family: 'Open Sans Condensed', sans-serif;
-    letter-spacing: 5px;
+    font-family: 'Source Code Pro';
+    letter-spacing: 0.1125em;
     color: #000;
     font-size: 1.5em;
     font-weight: normal;
 }
 
 p {text-align: justify;
-    inline-size: 225px;
+    inline-size: 14.0625em;
     overflow-wrap: break-word;
     font-family: 'Open Sans', sans-serif;
-    font-size: 17px;
-    letter-spacing: 2px;
+    font-size: 1.0625em;
+    letter-spacing: 0.125em;
     color: #000;
 }
 #about {
-    inline-size: 400px;
-    letter-spacing: 3px;
+    inline-size: 25em;
+    letter-spacing: 0.1875em;
     color: #000;
 }
 #subtitle {
     color: #4e6570;
 }
+#footer {
+    font-family: 'Source Code Pro';
+}
 
 a {text-align: justify;
-    inline-size: 158px;
+    inline-size: 9.875em;
     overflow-wrap: break-word;
     font-family: 'Open Sans', sans-serif;
-    letter-spacing: 2px;
+    letter-spacing: 0.125em;
     text-decoration: none;
-    font-size: 17px;}
+    font-size: 1.0625em;}
 #links {
     color: #4e6570;
+    font-family: 'Source Code Pro', sans-serif;
 }
 
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: #ffffff;
+    background-image: url("images/background.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 750em;
 }
 
 a.button {
     background-color: #747474;
     border: none;
     color: white;
-    padding: 12px 35px;
+    padding: 0.75em 2.1875em;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
+    font-size: 1em;
+    margin: 0.25em 0.125em;
     cursor: pointer;
-    border-radius: 4px
+    border-radius: 0.25em
 }
 
 img {
