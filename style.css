@@ -2,7 +2,7 @@ h1 {text-align: center;
     font-family: 'Source Code Pro';
     letter-spacing: 0.08em;
     color: #000;
-    font-size: 2.7em;
+    font-size: 2.4em;
     font-weight: normal;
 }
 
@@ -18,12 +18,13 @@ p {text-align: justify;
     inline-size: 14.0625em;
     overflow-wrap: break-word;
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.0625em;
+    font-size: 1.em;
     letter-spacing: 0.125em;
     color: #000;
+    line-height: 1.5em;
 }
 #about {
-    inline-size: 25em;
+    inline-size: 26em;
     letter-spacing: 0.1875em;
     color: #000;
 }
