@@ -15,7 +15,7 @@ h2 {text-align: center;
 }
 
 p {text-align: justify;
-    inline-size: 14.0625em;
+    inline-size: 16.0625em;
     overflow-wrap: break-word;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.em;
@@ -59,7 +59,7 @@ a.button {
     background-color: #5d7681;
     border: none;
     color: white;
-    padding: 0.75em 2.1875em;
+    padding: 0.75em 5.9em;
     text-align: center;
     text-decoration: none;
     display: inline-block;
