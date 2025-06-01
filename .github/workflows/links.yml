@@ -1,0 +1,17 @@
+name: Check for Broken Links
+
+on:
+  schedule:
+    - cron: '0 0 * * 0' # every Sunday
+  workflow_dispatch:
+
+jobs:
+  linkChecker:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Broken Link Checker
+        uses: gaurav-nelson/github-action-markdown-link-check@v1
+        with:
+          use-quiet-mode: yes
+          folder-path: .

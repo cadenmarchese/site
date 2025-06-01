@@ -1,74 +1,79 @@
-h1 {text-align: center;
-    font-family: 'Source Code Pro';
-    letter-spacing: 0.08em;
-    color: #000;
-    font-size: 2.4em;
-    font-weight: normal;
+h1 {
+  text-align: center;
+  font-family: "Source Code Pro";
+  letter-spacing: 0.08em;
+  color: #000;
+  font-size: 2.4em;
+  font-weight: normal;
 }
 
-h2 {text-align: center;
-    font-family: 'Source Code Pro';
-    letter-spacing: 0.1125em;
-    color: #000;
-    font-size: 1.5em;
-    font-weight: normal;
+h2 {
+  text-align: center;
+  font-family: "Source Code Pro";
+  letter-spacing: 0.1125em;
+  color: #000;
+  font-size: 1.5em;
+  font-weight: normal;
 }
 
-p {text-align: justify;
-    inline-size: 16.0625em;
-    overflow-wrap: break-word;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.em;
-    letter-spacing: 0.125em;
-    color: #000;
-    line-height: 1.5em;
+p {
+  text-align: justify;
+  inline-size: 16.0625em;
+  overflow-wrap: break-word;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+  letter-spacing: 0.125em;
+  color: #000;
+  line-height: 1.5em;
 }
 #about {
-    inline-size: 26em;
-    letter-spacing: 0.1875em;
-    color: #000;
+  inline-size: 26em;
+  letter-spacing: 0.1875em;
+  color: #000;
 }
 #subtitle {
-    color: #4e6570;
+  color: #4e6570;
 }
 #footer {
-    font-family: 'Source Code Pro';
+  font-family: "Source Code Pro";
 }
 
-a {text-align: justify;
-    inline-size: 9.875em;
-    overflow-wrap: break-word;
-    font-family: 'Open Sans', sans-serif;
-    letter-spacing: 0.125em;
-    text-decoration: none;
-    font-size: 1.0625em;}
+a {
+  text-align: justify;
+  inline-size: 9.875em;
+  overflow-wrap: break-word;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 0.125em;
+  text-decoration: none;
+  font-size: 1.0625em;
+}
 #links {
-    color: #4e6570;
-    font-family: 'Source Code Pro', sans-serif;
+  color: #4e6570;
+  font-family: "Source Code Pro", sans-serif;
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
-    background-image: url("images/background.jpg");
-    background-position: center;
-    background-attachment: fixed;
-    background-size: 750em;
+  font-family: "Open Sans", sans-serif;
+  background-image: url("images/background.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: 750em;
 }
 
 a.button {
-    background-color: #5d7681;
-    border: none;
-    color: white;
-    padding: 0.75em 5.9em;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 1em;
-    margin: 0.25em 0.125em;
-    cursor: pointer;
-    border-radius: 0.25em
+  background-color: #5d7681;
+  border: none;
+  color: white;
+  padding: 0.75em 5.9em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1em;
+  margin: 0.25em 0.125em;
+  cursor: pointer;
+  border-radius: 0.25em;
 }
 
 img {
-    border-radius: 1.5%;
+  border-radius: 1.5%;
 }

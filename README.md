@@ -1,5 +1,5 @@
 ## Site
 
-Site is a personal static HTML site, comprised of mostly Bandcamp embeds (music projects).
+Site is a personal site, comprised of mostly Bandcamp embeds (music projects).
 
-Site is exposed at `https://cadenmarchese.github.io/site`.
+Site is exposed at `https://cadenmarchese.github.io/site` which redirects from `pillsuper.com`
