@@ -2,7 +2,7 @@ name: Check for Broken Links
 
 on:
   schedule:
-    - cron: '0 0 * * 0' # every Sunday
+    - cron: "0 0 * * 0" # every Sunday
   workflow_dispatch:
 
 jobs:

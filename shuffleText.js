@@ -10,7 +10,7 @@ function shuffleString(str) {
 function enableHoverShuffleByClass(className, interval = 200) {
   const elements = document.querySelectorAll(`.${className}`);
 
-  elements.forEach(element => {
+  elements.forEach((element) => {
     const originalText = element.textContent;
     let shuffleInterval = null;
 
