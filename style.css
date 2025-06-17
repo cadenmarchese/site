@@ -1,41 +1,49 @@
-h1 {
-  text-align: center;
-  font-family: "Source Code Pro";
-  letter-spacing: 0.08em;
+body {
+  font-family: "Open Sans", sans-serif;
+  background-image: url("images/background.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: 750em;
   color: #000;
-  font-size: 2.4em;
+}
+
+h1, h2 {
+  text-align: center;
+  font-family: "Source Code Pro", monospace;
   font-weight: normal;
+  color: #000;
+}
+
+h1 {
+  letter-spacing: 0.08em;
+  font-size: 2.4em;
 }
 
 h2 {
-  text-align: center;
-  font-family: "Source Code Pro";
   letter-spacing: 0.1125em;
-  color: #000;
   font-size: 1.5em;
-  font-weight: normal;
 }
 
 p {
   text-align: justify;
   inline-size: 16.0625em;
   overflow-wrap: break-word;
-  font-family: "Open Sans", sans-serif;
   font-size: 1em;
   letter-spacing: 0.125em;
-  color: #000;
   line-height: 1.5em;
 }
+
 #about {
   inline-size: 26em;
   letter-spacing: 0.1875em;
-  color: #000;
 }
-#subtitle {
+
+.subtitle {
   color: #4e6570;
 }
-#footer {
-  font-family: "Source Code Pro";
+
+.footer {
+  font-family: "Source Code Pro", monospace;
 }
 
 a {
@@ -47,17 +55,10 @@ a {
   text-decoration: none;
   font-size: 1.0625em;
 }
+
 #links {
   color: #4e6570;
-  font-family: "Source Code Pro", sans-serif;
-}
-
-body {
-  font-family: "Open Sans", sans-serif;
-  background-image: url("images/background.jpg");
-  background-position: center;
-  background-attachment: fixed;
-  background-size: 750em;
+  font-family: "Source Code Pro", monospace;
 }
 
 a.button {
@@ -66,7 +67,6 @@ a.button {
   color: white;
   padding: 0.75em 5.9em;
   text-align: center;
-  text-decoration: none;
   display: inline-block;
   font-size: 1em;
   margin: 0.25em 0.125em;

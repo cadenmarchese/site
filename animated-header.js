@@ -1,4 +1,3 @@
-// animated-header.js
 export class AnimatedHeader extends HTMLElement {
   constructor() {
     super();
