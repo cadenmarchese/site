@@ -78,3 +78,118 @@ a.button {
 img {
   border-radius: 1.5%;
 }
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2em;
+  }
+  
+  h2 {
+    font-size: 1.3em;
+  }
+  
+  p {
+    inline-size: 90%;
+    font-size: 0.9em;
+  }
+  
+  #about {
+    inline-size: 90%;
+    letter-spacing: 0.125em;
+    font-size: 0.9em;
+  }
+  
+  a.button {
+    padding: 0.6em 2em;
+    margin: 0.2em 0.05em;
+    font-size: 0.9em;
+  }
+  
+  iframe {
+    width: 95% !important;
+    height: auto !important;
+    max-width: 100%;
+  }
+  
+  /* Remove fixed width from paragraphs */
+  .subtitle {
+    font-size: 0.85em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 1.6em;
+  }
+  
+  a.button {
+    display: block;
+    width: 80%;
+    margin: 0.5em auto;
+    padding: 0.8em 0;
+  }
+  
+  .subtitle {
+    font-size: 0.8em;
+  }
+}
+
+/* Add container class for iframes */
+.iframe-container {
+  position: relative;
+  width: 100%;
+  max-width: 43.75em; /* 700px in ems */
+  margin: 0 auto 1.5em auto;
+  overflow: hidden;
+  border-radius: 0.25em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.iframe-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+/* For bandcamp embeds specifically (square aspect ratio) */
+.bandcamp-container {
+  position: relative;
+  width: 100%;
+  max-width: 43.75em; /* 700px in ems */
+  margin: 0 auto 1.5em auto;
+  overflow: hidden;
+  border-radius: 0.25em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Square aspect ratio */
+  padding-bottom: 100%; /* This creates a square container */
+}
+
+.bandcamp-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Ensure responsive video containers */
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  margin: 0 auto 1.5em auto;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}

@@ -81,14 +81,21 @@ export class AnimatedHeader extends HTMLElement {
       _onUpdate();
     };
 
-    shuffle({
-      text,
-      duration: 2,
-      delay: 0,
-      delayResolve: 0.3,
-      direction: "right",
-      onUpdate: (str) => (el.textContent = str),
-    });
+    // Only run animation on desktop - not needed for mobile
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    if (!isMobile) {
+      shuffle({
+        text,
+        duration: 2,
+        delay: 0,
+        delayResolve: 0.3,
+        direction: "right",
+        onUpdate: (str) => (el.textContent = str),
+      });
+    } else {
+      // On mobile, just display the final text
+      el.textContent = text;
+    }
   }
 }
 
