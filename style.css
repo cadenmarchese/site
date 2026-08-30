@@ -153,19 +153,6 @@ img {
   display: block;
 }
 
-/* For bandcamp embeds specifically (square aspect ratio) */
-.bandcamp-container {
-  position: relative;
-  width: 100%;
-  max-width: 43.75em; /* 700px in ems */
-  margin: 0 auto 1.5em auto;
-  overflow: hidden;
-  border-radius: 0.25em;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  /* Square aspect ratio */
-  padding-bottom: 100%; /* This creates a square container */
-}
-
 .bandcamp-container iframe {
   position: absolute;
   top: 0;
