@@ -1,3 +1,7 @@
+:root {
+  --embed-size: 21.875em;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   background-image: url("images/background.jpg");
@@ -5,178 +9,160 @@ body {
   background-attachment: fixed;
   background-size: 750em;
   color: #000;
+  margin: 0;
+  padding: 0;
 }
 
-h1,
-h2 {
+.header-container {
+  margin-top: 3.5em;
+  margin-bottom: 3em;
   text-align: center;
-  font-family: "Source Code Pro", monospace;
-  font-weight: normal;
-  color: #000;
 }
 
-h1 {
-  letter-spacing: 0.08em;
-  font-size: 2.4em;
+.section-header-container {
+  margin-top: 5.5em;
+  margin-bottom: 3em;
+  text-align: center;
 }
 
-h2 {
-  letter-spacing: 0.1125em;
-  font-size: 1.5em;
-}
-
-p {
-  text-align: justify;
-  inline-size: 16.0625em;
-  overflow-wrap: break-word;
-  font-size: 1em;
-  letter-spacing: 0.125em;
-  line-height: 1.5em;
+.bio-container {
+  margin: 3.5em auto;
+  max-width: 600px;
+  padding: 0 1em;
 }
 
 #about {
   inline-size: 26em;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: justify;
   letter-spacing: 0.1875em;
+  line-height: 1.6em;
+  font-size: 0.9em;
 }
 
-.subtitle {
-  color: #4e6570;
+.embed-grid {
+  display: grid;
+  grid-template-columns: repeat(2, var(--embed-size));
+  justify-content: center;
+  column-gap: 0.5em;
+  row-gap: 3.75em;
+  max-width: 45em;
+  margin: 0 auto;
+}
+
+.embed-item {
+  width: var(--embed-size);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.embed-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+  margin-bottom: 0.6em;
+}
+
+.embed-info p {
+  text-align: center;
+  inline-size: 100%;
+  max-width: var(--embed-size);
+  margin: 0.15em auto;
+  font-size: 0.84em;
+  letter-spacing: 0.125em;
+  line-height: 1.5em;
+  color: #38434a;
+  overflow-wrap: break-word;
+}
+
+.embed-info p.subtitle {
+  color: #6b7e87;
+}
+
+.embed-item iframe,
+iframe.bandcamp-embed {
+  border: 0;
+  width: var(--embed-size);
+  height: var(--embed-size);
+  border-radius: 0.25em;
+  display: block;
+  flex-shrink: 0;
 }
 
 .footer {
   font-family: "Source Code Pro", monospace;
-}
-
-a {
-  text-align: justify;
-  inline-size: 9.875em;
-  overflow-wrap: break-word;
-  font-family: "Open Sans", sans-serif;
-  letter-spacing: 0.125em;
-  text-decoration: none;
-  font-size: 1.0625em;
-}
-
-#links {
-  color: #4e6570;
-  font-family: "Source Code Pro", monospace;
-}
-
-a.button {
-  background-color: #5d7681;
-  border: none;
-  color: white;
-  padding: 0.75em 5.9em;
+  margin-top: 5.5em;
+  margin-bottom: 3.5em;
   text-align: center;
-  display: inline-block;
-  font-size: 1em;
-  margin: 0.25em 0.125em;
-  cursor: pointer;
-  border-radius: 0.25em;
-}
-
-img {
-  border-radius: 1.5%;
+  font-size: 0.82em;
+  letter-spacing: 0.125em;
 }
 
 /* Responsive adjustments */
 @media screen and (max-width: 768px) {
-  h1 {
-    font-size: 2em;
+  :root {
+    --embed-size: 100%;
+  }
+
+  .header-container {
+    margin-top: 2.5em;
+    margin-bottom: 2em;
+  }
+
+  .section-header-container {
+    margin-top: 4em;
+    margin-bottom: 2em;
+  }
+
+  .bio-container {
+    margin: 2.5em auto;
   }
   
-  h2 {
-    font-size: 1.3em;
+  .embed-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 90%;
+    gap: 3em;
+  }
+
+  .embed-item {
+    width: 95%;
+    max-width: 350px;
+    margin: 0 auto;
   }
   
-  p {
-    inline-size: 90%;
-    font-size: 0.9em;
+  .embed-item iframe,
+  iframe.bandcamp-embed {
+    width: 100% !important;
+    height: 350px !important;
+    max-width: 100%;
   }
   
   #about {
     inline-size: 90%;
     letter-spacing: 0.125em;
-    font-size: 0.9em;
-  }
-  
-  a.button {
-    padding: 0.6em 2em;
-    margin: 0.2em 0.05em;
-    font-size: 0.9em;
-  }
-  
-  iframe {
-    width: 95% !important;
-    height: auto !important;
-    max-width: 100%;
-  }
-  
-  /* Remove fixed width from paragraphs */
-  .subtitle {
     font-size: 0.85em;
+  }
+
+  .embed-info p {
+    font-size: 0.78em;
   }
 }
 
 @media screen and (max-width: 480px) {
-  h1 {
-    font-size: 1.6em;
+  .embed-item iframe,
+  iframe.bandcamp-embed {
+    height: 300px !important;
   }
-  
-  a.button {
-    display: block;
-    width: 80%;
-    margin: 0.5em auto;
-    padding: 0.8em 0;
+
+  .embed-info p {
+    font-size: 0.74em;
   }
-  
-  .subtitle {
-    font-size: 0.8em;
-  }
-}
-
-/* Add container class for iframes */
-.iframe-container {
-  position: relative;
-  width: 100%;
-  max-width: 43.75em; /* 700px in ems */
-  margin: 0 auto 1.5em auto;
-  overflow: hidden;
-  border-radius: 0.25em;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.iframe-container iframe {
-  width: 100%;
-  height: 100%;
-  border: none;
-  display: block;
-}
-
-.bandcamp-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
-}
-
-/* Ensure responsive video containers */
-.video-container {
-  position: relative;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
-  height: 0;
-  overflow: hidden;
-  max-width: 100%;
-  margin: 0 auto 1.5em auto;
-}
-
-.video-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
 }
